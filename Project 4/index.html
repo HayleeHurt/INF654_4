@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Manager</title>
+    <link rel="stylesheet" href="/public/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/app.css">
+    <script type="text/javascript" src="/public/js/materialize.min.js"></script>
+    <link rel="manifest" href="/public/manifest.json">
+</head>
+
+<body class="grey lighten-4">
+    <nav class="z-depth-0">
+        <div class="nav-wrapper container">
+            <a href="/">Order<span> Manager</a>
+            <span class="right grey-text text-darken-1">
+                <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+            </span>
+        </div>
+    </nav>
+
+    <ul id="side-menu" class="sidenav side-menu">
+        <li><a class="subheader">Order MANAGER</a></li>
+        <li><a href="/" class="waves-effect">Home</a></li>
+        <li><a href="/public/pages/about.html" class="waves-effect">About</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="/public/pages/contact.html" class="waves-effect"><i class="material-icons">mail_outline</i>Contact</a>
+
+        </li>
+    </ul>
+
+    <!-- Tasks -->
+    <div class="orders container grey-text text-darken-1">
+        
+            <div class="card-panel order white row">
+                <img src="/public/img/task.png" class="responsive-img materialboxed" alt="">
+                <div class="order-detail">
+                    <div class="order-title">Order</div>
+                    <div class="order-description">Sample data</div>
+                </div>
+
+                <div class="order-delete">
+                    <i class="material-icons">delete_outline</i>
+                </div>
+            </div>
+            <div class="card-panel order white row">
+                <img src="/public/img/task.png" class="responsive-img materialboxed" alt="">
+                <div class="order-detail">
+                    <div class="order-title">Order</div>
+                    <div class="order-description">Sample data</div>
+                </div>
+
+                <div class="order-delete">
+                    <i class="material-icons">delete_outline</i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="center">
+        <a class="btn-floating btn-small btn-large add-btn sidenav-trigger" data-target="side-form">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+
+    <div id="side-form" class="sidenav side-form">
+        <form class="add-task container section">
+            <h6>New order</h6>
+            <div class="divider"></div>
+            <div class="input-field">
+                <input placeholder="Enter Order title" id="title" class="validate" type="text">
+                <label for="title">Order Title</label>
+            </div>
+            <div class="input-field">
+                <input placeholder="Enter Order description" id="description" class="validate" type="text">
+                <label for="description">Order Description</label>
+            </div>
+
+            <div class="input-field center">
+                <button class="btn-small">Add</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/public/js/ui.js"></script>
+    <script src="/public/js/app.js"></script>
+   <script type="module" src ="/public/js/db.js"></script>
+
+</body>
+
+</html>
